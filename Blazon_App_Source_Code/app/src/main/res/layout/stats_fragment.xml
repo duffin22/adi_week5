@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@drawable/gradient"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical"
+    android:contentDescription="@string/stats_data_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/overview"
+            style="@style/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:text="General Overview" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/search"
+            android:contentDescription="@string/zipcode_description"/>
+
+        <EditText
+            android:id="@+id/zipcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:hint="@string/zipcode"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textSize="18sp"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/inner_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" />
+
+</LinearLayout>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <DatePicker
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnersShown="true"
+        android:layout_gravity="center"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"/>
+
+    <TextView
+        android:text="What time?"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TimePicker
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:amPmBackgroundColor="@color/text_white"
+        android:numbersTextColor="@color/primary"
+        android:amPmTextColor="@color/primary"
+        android:numbersSelectorColor="@color/accent"
+        android:timePickerMode="spinner"/>
+
+</LinearLayout>

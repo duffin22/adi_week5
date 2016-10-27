@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/primary_dark">
+
+    <TextView android:id="@+id/text"
+        android:text="\nThanks for adding your voice to the movement.\n Stay tuned for updates!\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-thin"
+        android:paddingLeft="10dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/smallwhitelogo"
+        android:paddingTop="10dp"
+        android:contentDescription="@string/thank_you_image"/>
+    </LinearLayout>
+</LinearLayout>
